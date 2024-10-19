@@ -29,6 +29,9 @@
 
     .header {
         border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 
     .header-container {
@@ -76,7 +79,7 @@
         gap: 40px;
     }
 
-    .nav-menu {
+        /*.nav-menu {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -112,8 +115,102 @@
         text-decoration: none;
         display: block;
         padding: 24px 0;
-    }
+    }  */
     
+        /* Перший пункт меню (Studio) */
+        .menu li:first-child .nav-menu {
+            position: relative;
+            color: #404bbf;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            padding: 24px 0;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .menu li:first-child .nav-menu::after {
+            content: '';
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            height: 4px;
+            background-color: #404bbf;
+            border-radius: 2px;
+            transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            width: 0;
+        }
+    
+        .menu li:first-child .nav-menu:hover::after,
+        .menu li:first-child .nav-menu:focus::after {
+            width: 100%;
+        }
+    
+        /* Другий пункт меню (Portfolio) */
+        .menu li:nth-child(2) .nav-menu {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+            text-decoration: none;
+            padding: 24px 0;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .menu li:nth-child(2) .nav-menu:hover,
+        .menu li:nth-child(2) .nav-menu:focus {
+            color: #404bbf;
+        }
+    
+        /* Третій пункт меню (Contacts) */
+        .menu li:nth-child(3) .nav-menu {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+            text-decoration: none;
+            padding: 24px 0;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .menu li:nth-child(3) .nav-menu:hover,
+        .menu li:nth-child(3) .nav-menu:focus {
+            color: #404bbf;
+        }
+    
+        /* Стилі для контактів */
+        .contact-list {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+    
+        .contact-address {
+            font-style: normal;
+            margin-left: auto;
+        }
+    
+        .contact-link {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #434455;
+            text-decoration: none;
+            display: block;
+            padding: 24px 0;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .contact-link:hover,
+        .contact-link:focus {
+            color: #404bbf;
+        }
+
+
     .visually-hidden {
        position: absolute;
        width: 1px;
@@ -313,6 +410,8 @@
     
 
 
+
+
     /* .footer-logo {
         font-family: "Raleway", sans-serif;
         font-weight: 700;
@@ -324,9 +423,9 @@
         text-decoration: none;
         display: inline-block;
         margin-bottom: 16px;
-    } */
+    } 
 
-    /* .footer-description {
+     .footer-description {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
