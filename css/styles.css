@@ -372,13 +372,6 @@
     background-color: #404bbf;
 }
 
-.social-icon {
-    fill: var(--icon-color, #f4f4fd);
-}
-
-
-
-
    .portfolio-content {
        padding: 120px 0;
    }
@@ -467,16 +460,6 @@
         color: var(--color-f4f4fd, #f4f4fd);
         color: #434455;
        }
-
-
-    /* .footer-logo {
-        line-height: 1.17;
-        display: inline-block;
-    } 
-
-     .footer-description {
-        text-align: left;
-    } */
     
     .footer {
         background-color: #2e2f42;
@@ -563,9 +546,9 @@
     .social-link:focus {
         background-color: var(--accent-color, #31d0aa);
     }
-/* 
+ 
     .social-icon {
         fill: var(--icon-color, #f4f4fd);
         width: 24px;
         height: 24px;
-    } */
+    } 
